@@ -7,7 +7,7 @@ https://github.com/LegolasTheElf/mannaggia
 Per costruire il pacchetto RPM
 
 `
-rpmbuild -ba mannaggia.spec
+rpmbuild --define "_topdir $PWD" -ba mannaggia.spec
 `
 
 --------------------------------------------

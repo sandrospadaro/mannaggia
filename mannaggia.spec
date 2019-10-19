@@ -7,6 +7,8 @@ License: GPL
 Group: Application/utility
 Packager: sandro.spadaro@gmail.com
 
+BuildRoot: .
+
 %description
 Utility per mannaggiare Santi e Beati.
 Può essere usata in tutte le occasioni 
