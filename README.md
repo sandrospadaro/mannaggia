@@ -1,16 +1,81 @@
-# MANNAGGIA
+# Mannaggia
 
 Da un'idea originale di Pietro "Legolas" Suffritti
 
 https://github.com/LegolasTheElf/mannaggia
 
-Per costruire il pacchetto RPM
+**mannaggia** è utility per system administrator. Può essere solo da sistemisti esperti
+per mannaggiare Santi e Beati. 
 
-`
-rpmbuild --define "_topdir $PWD" -ba mannaggia.spec
-`
+## WARRANTY
+L'applicazione viene fornita *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali vendette divine.
 
---------------------------------------------
+## BUILD
+
+Per costruire il pacchetto RPM:
+
+Costruire l'archivio `tar.gz` con i file dell'utility
+
+```
+$ tar cvfz mannaggia-1.0.tar.gz mannaggia-1.0
+```
+
+copiare nella cartella `~/rpmbuild/SOURCES/`
+
+```
+$ cp mannaggia-1.0.tar.gz ~/rpmbuild/SOURCES/
+```
+
+copiare il file `.spec` in `~/rpmbuild/SPEC/`
+
+```
+$ cp mannaggia.spec ~/rpmbuild/SPEC/
+```
+creare il pacchetto rpm
+
+```
+$ rpmbuild -ba mannaggia.spec
+```
+
+Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-1.0-1.noarch.rpm`
+
+## Installazione
+
+Per installare il pacchetto:
+
+```
+$ sudo rpm -i mannaggia-1.0-1.noarch.rpm
+```
+
+## Utilizzo
+
+Di seguito un esempio di utilizzo:
+
+```
+$ mannaggia
+Mannaggia Beato Giacomo Alberione
+$ 
+```
+## Suggerimenti
+
+`mannaggia` può essere usato congiuntamente a `cowsay` per un'esperienza di mannaggia più autentica. Es:
+```
+$ mannaggia | cowsay -f telebears
+ ________________________________
+< Mannaggia San Filippo apostolo >
+ --------------------------------
+      \                _
+       \              (_)   <-- TeleBEARS
+        \   ^__^       / \
+         \  (oo)\_____/_\ \
+            (__)\  you  ) /
+                ||----w ((
+                ||     ||>> 
+$ 
+```
+Prova anche ad aggiungere un alias sul `.bashrc`; es: `alias cowdamn='mannaggia | cowsay -f telebears'`
+
+## Riferimenti
 
 https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/ 
 
