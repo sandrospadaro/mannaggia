@@ -41,7 +41,7 @@ Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-1.0-1.noarch
 
 ## Installazione
 
-Per installare il pacchetto:
+Il package rpm è disponibile [qui](bin/noarch/mannaggia-1.0-1.noarch.rpm) per il download. Per installare il pacchetto:
 
 ```
 $ sudo rpm -i mannaggia-1.0-1.noarch.rpm
