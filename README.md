@@ -75,10 +75,15 @@ $
 ```
 Prova anche ad aggiungere un alias sul `.bashrc`; es: `alias cowdamn='mannaggia | cowsay -f telebears'`
 
-## Riferimenti
+## Credits
 
-https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/ 
+### Santi e beati
+I santi e beati da mannaggiare sono stati estratti da [cathopedia.org](https://it.cathopedia.org/)
+* https://it.cathopedia.org/wiki/Lista_dei_Santi
+* https://it.cathopedia.org/wiki/Lista_dei_Beati
 
-https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it
+### Costruzione del pacchetto RPM
 
-https://www.thegeekstuff.com/2015/02/rpm-build-package-example/
+* https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/ 
+* https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it
+* https://www.thegeekstuff.com/2015/02/rpm-build-package-example/
