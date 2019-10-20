@@ -81,4 +81,4 @@ https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/
 
 https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it
 
-htps://www.thegeekstuff.com/2015/02/rpm-build-package-example/
+https://www.thegeekstuff.com/2015/02/rpm-build-package-example/
