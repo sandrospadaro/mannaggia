@@ -14,34 +14,27 @@ L'applicazione viene fornita *as is* e senza nessuna garanzia. L'autore non potr
 
 Per costruire il pacchetto RPM:
 
-Costruire l'archivio `tar.gz` con i file dell'utility
-
+* costruire l'archivio `tar.gz` con i file dell'utility
 ```
 $ tar cvfz mannaggia-1.0.tar.gz mannaggia-1.0
 ```
-
-copiare nella cartella `~/rpmbuild/SOURCES/`
-
+* copiare nella cartella `~/rpmbuild/SOURCES/`
 ```
 $ cp mannaggia-1.0.tar.gz ~/rpmbuild/SOURCES/
 ```
-
-copiare il file `.spec` in `~/rpmbuild/SPEC/`
-
+* copiare il file `.spec` in `~/rpmbuild/SPEC/`
 ```
 $ cp mannaggia.spec ~/rpmbuild/SPEC/
 ```
-creare il pacchetto rpm
-
+* creare il pacchetto rpm
 ```
 $ rpmbuild -ba mannaggia.spec
 ```
-
 Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-1.0-1.noarch.rpm`
 
 ## Installazione
 
-Per i pigri il package rpm è disponibile [qui](https://raw.githubusercontent.com/sandrospadaro/mannaggia/develop/bin/noarch/mannaggia-1.0-1.noarch.rpm) per il download. Per installare il pacchetto:
+Per i pigri il package rpm già buildato è disponibile [qui](https://raw.githubusercontent.com/sandrospadaro/mannaggia/develop/bin/noarch/mannaggia-1.0-1.noarch.rpm) per il download. Per installare il pacchetto:
 
 ```
 $ sudo rpm -i mannaggia-1.0-1.noarch.rpm
