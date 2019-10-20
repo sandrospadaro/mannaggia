@@ -7,10 +7,10 @@ https://github.com/LegolasTheElf/mannaggia
 **mannaggia** è utility per system administrator. Può essere solo da sistemisti esperti
 per mannaggiare Santi e Beati. 
 
-## WARRANTY
+## Warranty
 L'applicazione viene fornita *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali vendette divine.
 
-## BUILD
+## Build
 
 Per costruire il pacchetto RPM:
 
