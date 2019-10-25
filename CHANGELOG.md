@@ -1,3 +1,15 @@
+commit 951142018bb20678bf55901491f6650905ed3826
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Fri Oct 25 23:36:26 2019 +0200
+
+    Aggriona il file README.md
+
+commit 85db3f3c9a20c69c2d4e03e378977db5071b35cb
+Merge: 33c7399 f9ecacb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Fri Oct 25 23:09:38 2019 +0200
+
+    Merge branch 'release/1.0.1' into develop
 # Versione 1.0.1
 
 commit 33c739929d47fd4d2cb6ae11a4c424258c192de5
