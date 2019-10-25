@@ -1,3 +1,5 @@
+# Versione 1.0.2
+
 commit 951142018bb20678bf55901491f6650905ed3826
 Author: Sandro Spadaro <sandro.spadaro@gmail.com>
 Date:   Fri Oct 25 23:36:26 2019 +0200
