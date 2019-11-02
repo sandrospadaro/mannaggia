@@ -10,7 +10,7 @@ https://github.com/LegolasTheElf/mannaggia
 Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali punizioni divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
 
 * perdita di dati in sistemi di produzione il cui backup è bloccato da eoni
-* richiesta di assistenza da utenti con cultura informatica paragonabile a quelle di una scimmia urlante
+* richiesta di assistenza da utenti con cultura informatica paragonabile a quella di una scimmia urlante
 * blocco assoluto dei sistemi la sera prima della partenza per le vacanze
 
 ## Build
@@ -44,7 +44,7 @@ Per i pigri il package rpm già buildato è disponibile [qui](https://raw.github
 $ sudo rpm -i mannaggia-<VERSION>-1.noarch.rpm
 ```
 
-I funbi possono invece installarlo tramite repository **dnf** seguendo i seguenti passi:
+I furbi possono invece installarlo tramite repository **dnf** seguendo i seguenti passi:
 
 ### Configurazione del repository
 
