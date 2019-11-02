@@ -65,7 +65,7 @@ $ sudo dnf install mannaggia -y
 
 ## Utilizzo
 
-### Mannaggia
+### mannaggia
 
 Di seguito un esempio di utilizzo:
 
