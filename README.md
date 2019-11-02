@@ -4,11 +4,14 @@ Da un'idea originale di Pietro "Legolas" Suffritti
 
 https://github.com/LegolasTheElf/mannaggia
 
-**mannaggia** è utility per system administrator. Può essere solo da sistemisti esperti
-per mannaggiare Santi e Beati. 
+**mannaggia** e **cowdamn** sono utility per system administrator. Possono essere solo da sistemisti esperti per mannaggiare Santi e Beati. 
 
 ## Warranty
-L'applicazione viene fornita *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali vendette divine.
+Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali punizioni divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
+
+* perdita di dati in sistemi di produzione il cui backup è bloccato da eoni
+* richiesta di assistenza da utenti con cultura informatica paragonabile a quelle di una scimmia urlante
+* blocco assoluto dei sistemi la sera prima della partenza per le vacanze
 
 ## Build
 
@@ -16,31 +19,53 @@ Per costruire il pacchetto RPM:
 
 * costruire l'archivio `tar.gz` con i file dell'utility
 ```
-$ tar cvfz mannaggia-1.0.tar.gz mannaggia-1.0
+$ tar cvfz mannaggia-<VERSION>.tar.gz mannaggia-<VERSION>
 ```
 * copiare nella cartella `~/rpmbuild/SOURCES/`
 ```
-$ cp mannaggia-1.0.tar.gz ~/rpmbuild/SOURCES/
+$ cp mannaggia-<VERSION>.tar.gz ~/rpmbuild/SOURCES/
 ```
-* copiare il file `.spec` in `~/rpmbuild/SPEC/`
+* copiare il file `.spec` in `~/rpmbuild/SPECS/`
 ```
-$ cp mannaggia.spec ~/rpmbuild/SPEC/
+$ cp mannaggia.spec ~/rpmbuild/SPECS/
 ```
-* creare il pacchetto rpm
+* spostarsi nella cartella `~/rpmbuild/SPECS/` e creare il pacchetto rpm
 ```
+$ cd ~/rpmbuild/SPECS
 $ rpmbuild -ba mannaggia.spec
 ```
-Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-1.0-1.noarch.rpm`
+Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-<VERSION>-1.noarch.rpm`
 
 ## Installazione
 
-Per i pigri il package rpm già buildato è disponibile [qui](https://raw.githubusercontent.com/sandrospadaro/mannaggia/develop/bin/noarch/mannaggia-1.0-1.noarch.rpm) per il download. Per installare il pacchetto:
+Per i pigri il package rpm già buildato è disponibile [qui](https://raw.githubusercontent.com/sandrospadaro/mannaggia/develop/bin/noarch/mannaggia-1.1-1.noarch.rpm) per il download. Per installare il pacchetto:
 
 ```
-$ sudo rpm -i mannaggia-1.0-1.noarch.rpm
+$ sudo rpm -i mannaggia-<VERSION>-1.noarch.rpm
+```
+
+I funbi possono invece installarlo tramite repository **dnf** seguendo i seguenti passi:
+
+### Configurazione del repository
+
+Creare il file `/etc/yum.repos.d/sandrospadaro.repo`
+
+```
+$ cd /etc/yum.repos.d/
+$ sudo curl http://sandrospadaro.altervista.org/sandrospadaro.repo --output sandrospadaro.repo
+```
+
+### Installazione tramite dnf
+
+Lanciare il comando
+
+```
+$ sudo dnf install mannaggia -y
 ```
 
 ## Utilizzo
+
+### Mannaggia
 
 Di seguito un esempio di utilizzo:
 
@@ -49,11 +74,11 @@ $ mannaggia
 Mannaggia Beato Giacomo Alberione
 $ 
 ```
-## Suggerimenti
+### cowdamn
 
-`mannaggia` può essere usato congiuntamente a `cowsay` per un'esperienza di mannaggia più autentica. Es:
+Si consiglia l'utilizzo di `cowdamn` per un'esperienza di mannaggia più autentica . Es:
 ```
-$ mannaggia | cowsay -f telebears
+$ cowdamn
  ________________________________
 < Mannaggia San Filippo apostolo >
  --------------------------------
@@ -66,7 +91,6 @@ $ mannaggia | cowsay -f telebears
                 ||     ||>> 
 $ 
 ```
-Prova anche ad aggiungere un alias sul `.bashrc`; es: `alias cowdamn='mannaggia | cowsay -f telebears'`
 
 ## Gestione del repository
 
@@ -94,3 +118,7 @@ I santi e beati da mannaggiare sono stati estratti da [cathopedia.org](https://i
 * https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/ 
 * https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it
 * https://www.thegeekstuff.com/2015/02/rpm-build-package-example/
+
+### Configurazione di un repository yum
+
+* https://stackoverflow.com/questions/13876875/how-to-make-rpm-auto-install-dependencies
