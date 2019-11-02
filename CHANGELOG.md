@@ -1,3 +1,33 @@
+commit 466b55152d4371acc8df03f2d27b8ec46ac58ed9
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:16:26 2019 +0100
+
+    mannaggia 1.1
+
+commit 38b562d5b819686b337728aa617680d34d375d77
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 12:56:19 2019 +0100
+
+    Aggiunge il file sandrospadaro.repo
+
+commit 9b99911700e8ea8cf56029cb0780a2a28b4cba22
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 00:07:35 2019 +0100
+
+    Elimina il repository dnf
+
+commit 2311d70b9b926b5ad8c5d20379034fcea4cb3235
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Fri Nov 1 23:58:59 2019 +0100
+
+    Crea il repository dnf
+
+commit 6d4536d5fcd6c9236c6d798c732ff4d6ba530b26
+Merge: 9511420 1a414fb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Fri Oct 25 23:38:55 2019 +0200
+
+    Merge branch 'release/1.0.2' into develop
 # Versione 1.0.2
 
 commit 951142018bb20678bf55901491f6650905ed3826
