@@ -88,7 +88,7 @@ $ cowdamn
 < Mannaggia San Filippo apostolo >
  --------------------------------
       \                _
-       \              (_)   <-- TeleBEARS
+       \              (_)   <-- life
         \   ^__^       / \
          \  (oo)\_____/_\ \
             (__)\  you  ) /
