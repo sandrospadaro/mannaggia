@@ -17,13 +17,18 @@ Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potr√
 
 Per costruire il pacchetto RPM:
 
+* settare la variabile d'ambiente MANNAGGIA_VERS
+```
+$ export MANNAGGIA_VERS=1.2
+```
+
 * costruire l'archivio `tar.gz` con i file dell'utility
 ```
-$ tar cvfz mannaggia-<VERSION>.tar.gz mannaggia-<VERSION>
+$ tar cvfz mannaggia-${MANNAGGIA_VERS}.tar.gz mannaggia-${MANNAGGIA_VERS}
 ```
 * copiare nella cartella `~/rpmbuild/SOURCES/`
 ```
-$ cp mannaggia-<VERSION>.tar.gz ~/rpmbuild/SOURCES/
+$ cp mannaggia-${MANNAGGIA_VERS}.tar.gz ~/rpmbuild/SOURCES/
 ```
 * copiare il file `.spec` in `~/rpmbuild/SPECS/`
 ```
