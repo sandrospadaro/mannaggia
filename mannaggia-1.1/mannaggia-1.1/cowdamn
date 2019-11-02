@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mannaggia | cowsay -f telebears

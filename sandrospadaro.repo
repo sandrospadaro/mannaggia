@@ -1,5 +1,0 @@
-[sandrospadaro]
-name=Repository dei packages manutenuti da Sandro Spadaro
-baseurl=http://sandrospadaro.altervista.org/repo
-enabled=1
-gpgcheck=0
