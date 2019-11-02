@@ -1,3 +1,41 @@
+# Versione 1.2.0
+
+commit d7a00e8189d689ff0286a676a719383f63645ec3
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 17:30:10 2019 +0100
+
+    Aggiunge un file specifico per cowdamn
+
+commit 8beb3e78f78ed63306c9d6d9d312681cefc8ffe5
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 14:59:42 2019 +0100
+
+    Modifiche minori
+
+commit aa3bffda2c8832941d40094780517648eefcf545
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:48:16 2019 +0100
+
+    Modifiche minori
+
+commit 79c3318c50c578be4505f27e37201131ed6f426d
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:44:29 2019 +0100
+
+    Modifiche minori
+
+commit 02d3fd081551d7ae3a88c3bb82b3aba23939d42c
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:26:20 2019 +0100
+
+    Corregge il file CHANGELOG
+
+commit 15b2bcf3fe8c08b38330bb840e2d0652ef0d9fc6
+Merge: 466b551 44570d8
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:19:50 2019 +0100
+
+    Merge branch 'release/1.1.0' into develop
 # Versione 1.1.0
 
 commit 466b55152d4371acc8df03f2d27b8ec46ac58ed9
