@@ -1,12 +1,13 @@
+%define version 1.2
 Name:           mannaggia
-Version:        1.1
+Version:        %{version}
 Release:        1
 Summary:        Utility per mannaggiare Santi e Beati
 
 License:        GPL
 URL:            https://github.com/sandrospadaro/mannaggia
-Source0:        mannaggia-1.1.tar.gz
-BuildArch:	noarch
+Source0:        mannaggia-%{version}.tar.gz
+BuildArch:      noarch
 
 Requires: cowsay
 
@@ -27,9 +28,10 @@ per mannaggiare Santi e Beati.
 %install
 install -d -m 0755 $RPM_BUILD_ROOT/etc/mannaggia.d
 install -d $RPM_BUILD_ROOT/usr/sbin
-install -m 0755 mannaggia-1.1/mannaggia $RPM_BUILD_ROOT/usr/sbin/mannaggia
-install -m 0755 mannaggia-1.1/cowdamn $RPM_BUILD_ROOT/usr/sbin/cowdamn
-install -m 0755 mannaggia-1.1/mannaggia.dat $RPM_BUILD_ROOT/etc/mannaggia.d/mannaggia.dat
+install -m 0755 mannaggia-%{version}/mannaggia $RPM_BUILD_ROOT/usr/sbin/mannaggia
+install -m 0755 mannaggia-%{version}/cowdamn $RPM_BUILD_ROOT/usr/sbin/cowdamn
+install -m 0644 mannaggia-%{version}/mannaggia.dat $RPM_BUILD_ROOT/etc/mannaggia.d/mannaggia.dat
+install -m 0644 mannaggia-%{version}/mannaggia.cow $RPM_BUILD_ROOT/etc/mannaggia.d/mannaggia.cow
 #%make_install
 
 %clean
@@ -41,6 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/sbin/mannaggia
 /usr/sbin/cowdamn
 /etc/mannaggia.d/mannaggia.dat
+/etc/mannaggia.d/mannaggia.cow
 #%license add-license-file-here
 #%doc add-docs-here
 
