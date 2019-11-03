@@ -4,10 +4,10 @@ Da un'idea originale di Pietro "Legolas" Suffritti
 
 https://github.com/LegolasTheElf/mannaggia
 
-**mannaggia** e **cowdamn** sono utility per system administrator. Possono essere solo da sistemisti esperti per mannaggiare Santi e Beati. 
+**mannaggia** e **cowdamn** sono utility per system administrator. Possono essere solo da sistemisti esperti per mannaggiare automaticamente Santi e Beati. 
 
 ## Warranty
-Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali punizioni divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
+Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali punizioni e/o vendette divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
 
 * perdita di dati in sistemi di produzione il cui backup è bloccato da eoni
 * richiesta di assistenza da utenti con cultura informatica paragonabile a quella di una scimmia urlante
@@ -22,24 +22,11 @@ Per costruire il pacchetto RPM:
 $ export MANNAGGIA_VERS=1.2
 ```
 
-* costruire l'archivio `tar.gz` con i file dell'utility
+* eseguire lo script build.sh
 ```
-$ tar cvfz mannaggia-${MANNAGGIA_VERS}.tar.gz mannaggia-${MANNAGGIA_VERS}
+$ ./build.sh
 ```
-* copiare nella cartella `~/rpmbuild/SOURCES/`
-```
-$ cp mannaggia-${MANNAGGIA_VERS}.tar.gz ~/rpmbuild/SOURCES/
-```
-* copiare il file `.spec` in `~/rpmbuild/SPECS/`
-```
-$ cp mannaggia.spec ~/rpmbuild/SPECS/
-```
-* spostarsi nella cartella `~/rpmbuild/SPECS/` e creare il pacchetto rpm
-```
-$ cd ~/rpmbuild/SPECS
-$ rpmbuild -ba mannaggia.spec
-```
-Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-<VERSION>-1.noarch.rpm`
+Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-<MANNAGGIA_VERS>-1.noarch.rpm`
 
 ## Installazione
 
@@ -81,7 +68,7 @@ $
 ```
 ### cowdamn
 
-Si consiglia l'utilizzo di `cowdamn` per un'esperienza di mannaggia più autentica . Es:
+Si consiglia l'utilizzo di `cowdamn` per un'esperienza di mannaggia più autentica. Es:
 ```
 $ cowdamn
  ________________________________
