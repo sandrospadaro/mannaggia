@@ -36,7 +36,7 @@ Per i pigri il package rpm già buildato è disponibile [qui](http://sandrospada
 $ sudo rpm -i mannaggia-<VERSION>-1.noarch.rpm
 ```
 
-I furbi possono invece installarlo tramite repository **dnf** seguendo i seguenti passi:
+I furbi possono invece installarlo tramite repository **yum** seguendo i seguenti passi:
 
 ### Configurazione del repository
 
