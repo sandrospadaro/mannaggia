@@ -1,4 +1,4 @@
-%define version 1.2
+%define version %{getenv:MANNAGGIA_VERS}
 Name:           mannaggia
 Version:        %{version}
 Release:        1
