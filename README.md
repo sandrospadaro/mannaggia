@@ -108,7 +108,7 @@ $ sudo dnf install mannaggia -y
 ```
 ## Installazione su Debian e Ubuntu
 
-Visto che è stato richiesto da molti, anche se ciò va oltre lo scopo per cui questo progetto, è stato preparato lo script `install_deb.sh` per facilitare l'installazione sui sistemi **Debian based** a partire dal 'codice sorgente'.
+Visto che è stato richiesto da molti, anche se ciò va oltre lo scopo per cui questo progetto è stato creato, si è provveduto ad implementare lo script `install_deb.sh` al fine di facilitare l'installazione su sistemi **Debian based** a partire dal 'codice sorgente'.
 
 Per eseguire l'installazione è sufficiente usare il comando:
 ```
