@@ -95,7 +95,7 @@ I furbi lo possono invece installare tramite repository **yum** seguendo questi 
 $ cd /etc/yum.repos.d/
 $ sudo curl http://sandrospadaro.altervista.org/sandrospadaro.repo --output sandrospadaro.repo
 ```
-* Installara il pacchetto tramite dnf lanciando il comando
+* Installare il pacchetto tramite dnf lanciando il comando
 ```
 $ sudo dnf install mannaggia -y
 ```
