@@ -88,7 +88,7 @@ Il package rpm già buildato è disponibile [qui](http://sandrospadaro.altervist
 $ sudo rpm -i mannaggia-<VERSION>-1.noarch.rpm
 ```
 
-I furbi possono invece installarlo tramite repository **yum** seguendo i questi step:
+I furbi lo possono invece installare tramite repository **yum** seguendo i questi step:
 
 ### Configurazione del repository
 
