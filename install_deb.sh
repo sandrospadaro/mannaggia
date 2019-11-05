@@ -1,5 +1,6 @@
 #!/bin/bash
-apt install cowsay && \
+apt update && \
+	apt install cowsay && \
 	mkdir -p /etc/mannaggia.d && \
 	cp src/mannaggia /usr/sbin/mannaggia && \
 	cp src/cowdamn /usr/sbin/cowdamn && \
