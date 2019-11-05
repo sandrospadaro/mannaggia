@@ -4,7 +4,7 @@ Da un'idea originale di Pietro "Legolas" Suffritti
 
 [https://github.com/LegolasTheElf/mannaggia](https://github.com/LegolasTheElf/mannaggia)
 
-**mannaggia** e **cowdamn** sono utility per system administrator. Possono essere solo da sistemisti esperti per mannaggiare automaticamente Santi e Beati. 
+**mannaggia** e **cowdamn** sono utility per system administrator. Possono essere utilizzate solo da sistemisti esperti per mannaggiare automaticamente Santi e Beati. 
 
 ## Warranty
 Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali punizioni e/o vendette divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
