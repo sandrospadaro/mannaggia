@@ -28,15 +28,67 @@ $ ./build.sh
 ```
 Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-<MANNAGGIA_VERS>-1.noarch.rpm`
 
-## Installazione
+## Utilizzo
 
-Per i pigri il package rpm già buildato è disponibile [qui](http://sandrospadaro.altervista.org/repo/index.html) per il download. Per installare il pacchetto:
+### mannaggia
+
+Di seguito un esempio di utilizzo.
+
+Es. 1:
+```
+$ mannaggia
+Mannaggia Beato Giacomo Alberione!
+$ 
+```
+Es. 2:
+```
+$ mannaggia "Si è esaurito lo spazio disco"
+Mannaggia Beata Maria di San Giuseppe Alvarado! Si è esaurito lo spazio disco
+$
+```
+### cowdamn
+
+Si consiglia l'utilizzo di `cowdamn` per un'esperienza di mannaggia più autentica. 
+Es. 1:
+```
+$ cowdamn 
+ ______________________
+< Mannaggia San Rocco! >
+ ----------------------
+      \                _
+       \              (_)   <-- life
+        \   ^__^       / \
+         \  (oo)\_____/_\ \
+            (__)\  you  ) /
+                ||----w ((
+                ||     ||>> 
+$
+```
+Es. 2:
+```
+$ cowdamn "La CPU sta a manetta"
+ ________________________________________
+/ Mannaggia San Romano il Melode! La CPU \
+\ sta a manetta                          /
+ ----------------------------------------
+      \                _
+       \              (_)   <-- life
+        \   ^__^       / \
+         \  (oo)\_____/_\ \
+            (__)\  you  ) /
+                ||----w ((
+                ||     ||>> 
+$
+```
+## Installazione su RedHat, CentOS e fedora
+
+Il package rpm già buildato è disponibile [qui](http://sandrospadaro.altervista.org/repo/index.html) per il download. Per installare il pacchetto:
 
 ```
 $ sudo rpm -i mannaggia-<VERSION>-1.noarch.rpm
 ```
 
-I furbi possono invece installarlo tramite repository **yum** seguendo i seguenti passi:
+I furbi possono invece installarlo tramite repository **yum** seguendo i questi step:
 
 ### Configurazione del repository
 
@@ -54,26 +106,28 @@ Lanciare il comando
 ```
 $ sudo dnf install mannaggia -y
 ```
+## Installazione su Debian e Ubuntu
 
-## Utilizzo
+Visto che è stato richiesto da molti, anche se questo va oltre lo scopo per cui questo progetto, è stato creato ho creato lo script `install_deb.sh` per facilitare l'installazione sui sistemi **Debian based** a partire dal 'codice sorgente'.
 
-### mannaggia
+Per eseguire l'installazione è sufficiente usare il comando:
+```
+$ sudo install_deb.sh
+```
 
-Di seguito un esempio di utilizzo:
+## Installazione su altre distribuzioni
+
+Per usare le utility su altre distribuzione basta copiare gli script `mannaggia` e `cowdamn` in `/usr/sbin/` e i file `mannaggia.dat` e `mannaggia.cow` in `/etc/mannaggia.d/`
+
+## Supporto multilingua
 
 ```
-$ mannaggia
-Mannaggia Beato Giacomo Alberione
-$ 
-```
-### cowdamn
-
-Si consiglia l'utilizzo di `cowdamn` per un'esperienza di mannaggia più autentica. Es:
-```
-$ cowdamn
- ________________________________
-< Mannaggia San Filippo apostolo >
- --------------------------------
+ _________________________________________
+/ Mannaggia San Gregorio di Nissa! Non    \
+| esageriamo. Se volete mannaggiare Santi |
+| e Beati in altre lingue la traduzione   |
+\ ve la fate da voi.                      /
+ -----------------------------------------
       \                _
        \              (_)   <-- life
         \   ^__^       / \
@@ -81,9 +135,8 @@ $ cowdamn
             (__)\  you  ) /
                 ||----w ((
                 ||     ||>> 
-$ 
-```
 
+```
 ## Gestione del repository
 
 Per sviluppare questo progetto ho usato `git flow`. Ad ogni nuova release viene aggiornato il change log con l'istruzione:

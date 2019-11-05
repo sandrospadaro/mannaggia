@@ -1,3 +1,0 @@
-#!/bin/sh
-
-mannaggia | cowsay -f /etc/mannaggia.d/mannaggia.cow

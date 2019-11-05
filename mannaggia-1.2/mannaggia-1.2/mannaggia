@@ -1,5 +1,0 @@
-#!/bin/sh
-SANTO="$(shuf -n 1 /etc/mannaggia.d/mannaggia.dat)"
-
-echo Mannaggia $SANTO
-
