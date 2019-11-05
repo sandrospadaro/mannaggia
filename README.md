@@ -117,7 +117,7 @@ $ sudo install_deb.sh
 
 ## Installazione su altre distribuzioni
 
-Per usare le utility su altre distribuzione basta installare `cowasy` con il package manager previsto dalla distribuzione e copiare gli script `mannaggia` e `cowdamn` in `/usr/sbin/` e i file `mannaggia.dat` e `mannaggia.cow` in `/etc/mannaggia.d/`
+Per usare le utility su altre distribuzione basta installare `cowasy` con il package manager previsto dal sistema e copiare gli script `mannaggia` e `cowdamn` in `/usr/sbin/` e i file `mannaggia.dat` e `mannaggia.cow` in `/etc/mannaggia.d/`
 
 ## Supporto multilingua
 
