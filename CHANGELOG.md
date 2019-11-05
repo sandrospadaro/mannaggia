@@ -1,3 +1,173 @@
+# Versione 1.3.0
+
+commit 377012b71c5811639ed16ff928a4d1d641443f9f
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:33:59 2019 +0100
+
+    Aggiorna la documentazione
+
+commit 456fa58f010c593cee3163a4f4a71d553be501b7
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:29:58 2019 +0100
+
+    Aggiorna la documentazione
+
+commit 747cddd64b14298427f83715bba7873ee570272d
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:28:45 2019 +0100
+
+    Aggiorna la documentazione
+
+commit 91f1513692c732011f7b9c1fc628cbfe23996680
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:26:29 2019 +0100
+
+    Aggiunge il pacchetto rpm della versione 1.3
+
+commit 0e1a04af4d79cd9b881653414911b7046f371649
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:24:05 2019 +0100
+
+    Implementa le modifiche per la versione 1.3 e aggiorna la documentazione
+
+commit 92905353087a54294a928e0d7c2a5fd4281f0f5c
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 10:52:40 2019 +0000
+
+    crea script di installazione per systemi debian
+
+commit 1a6221f62f9a211e90be9c0df6347bd7519d71bb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 10:50:04 2019 +0000
+
+    crea script di installazione per systemi debian
+
+commit 1a4c91afe7488f3c70a255ade26878cc5817d5b5
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 22:12:51 2019 +0100
+
+    Corregge il file README.md
+
+commit a8950f458abee45c93dd8048523d5de537ed0d93
+Merge: 230df95 365ce32
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 15:56:32 2019 +0100
+
+    Merge branch 'master' of github.com:sandrospadaro/mannaggia
+
+commit 230df9538f23eacdca290f47487c506d8187af73
+Merge: 025444a b9a58f0
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 15:53:23 2019 +0100
+
+    Merge branch 'develop'
+
+commit b9a58f0b8195babc02150e49e687dbc92b3cda04
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 15:51:59 2019 +0100
+
+    sposta la mannaggia-1.2-1.noarch.rpm nella directory corretta
+
+commit 33b99e2c60653f02463bad5b0972c2efcf842f98
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 15:51:34 2019 +0100
+
+    sposta la mannaggia-1.2-1.noarch.rpm nella directory corretta
+
+commit e7da93b9f8c19f5a8290aca567c2850c22509b19
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 15:50:31 2019 +0100
+
+    Automatizza il processo di build
+
+commit 365ce3242536b14d31943dee12df54a206919069
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 3 14:17:20 2019 +0100
+
+    Set theme jekyll-theme-hacker
+
+commit 025444a9f5315397638368f1ebdf07b44ec795cb
+Merge: 5110f98 2e6327d
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 17:36:10 2019 +0100
+
+    Merge branch 'develop'
+
+commit 2e6327d782b96d6332bce10aa39e0133c870f8d8
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 17:35:46 2019 +0100
+
+    Aggriona il file README.md
+
+commit de94dab20ef0202b8ecacdd44bdceb7867b911f1
+Merge: d7a00e8 95c2287
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 17:33:42 2019 +0100
+
+    Merge branch 'release/1.2.0' into develop
+
+commit 5110f986cf3b0011f869083eb9b96d66a6dc55d4
+Merge: 4cfaaee 95c2287
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 17:33:29 2019 +0100
+
+    Merge branch 'release/1.2.0'
+
+commit 4cfaaee22cdb16992b015744a60428dd7f7751ff
+Merge: 8b9f503 8beb3e7
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 15:00:11 2019 +0100
+
+    Merge branch 'develop'
+
+commit 8b9f503f7d0c03ced395b923f437d8dd3db92f88
+Merge: bb2d348 aa3bffd
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:48:36 2019 +0100
+
+    Merge branch 'develop'
+
+commit bb2d348231902033e506c43c900adcf54e2e01d6
+Merge: d3d9c02 79c3318
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:45:06 2019 +0100
+
+    Merge branch 'develop'
+
+commit d3d9c0238733c684291315834fcb07d9bd548e98
+Merge: cd8851b 02d3fd0
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:26:43 2019 +0100
+
+    Merge branch 'develop'
+
+commit cd8851b85b992bf53c9f2fba759192db31c3cc96
+Merge: d50538d 44570d8
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 2 13:19:38 2019 +0100
+
+    Merge branch 'release/1.1.0'
+
+commit d50538daaf31c6671471fbdf6c45efeabd183554
+Merge: cf12e43 1a414fb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Fri Oct 25 23:38:40 2019 +0200
+
+    Merge branch 'release/1.0.2'
+
+commit cf12e43210cf39c89d12cd622912de60491d933c
+Merge: 975de8b f9ecacb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Fri Oct 25 23:09:15 2019 +0200
+
+    Merge branch 'release/1.0.1'
+
+commit 975de8bcf7101e8c7a87b9347fa8328f79202a2f
+Merge: 9e353ae 24dfdee
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Oct 20 18:31:37 2019 +0200
+
+    Merge branch 'release/1.0.0'
 # Versione 1.2.0
 
 commit d7a00e8189d689ff0286a676a719383f63645ec3
