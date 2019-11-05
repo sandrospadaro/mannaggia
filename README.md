@@ -90,14 +90,12 @@ $ sudo rpm -i mannaggia-<VERSION>-1.noarch.rpm
 
 I furbi lo possono invece installare tramite repository **yum** seguendo questi step:
 
-* Configurazione del repository
-Creare il file `/etc/yum.repos.d/sandrospadaro.repo`
+* Configurare il repository scaricando il file `/etc/yum.repos.d/sandrospadaro.repo`
 ```
 $ cd /etc/yum.repos.d/
 $ sudo curl http://sandrospadaro.altervista.org/sandrospadaro.repo --output sandrospadaro.repo
 ```
-* Installazione tramite dnf
-Lanciare il comando
+* Installara il pacchetto tramite dnf lanciando il comando
 ```
 $ sudo dnf install mannaggia -y
 ```
