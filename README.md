@@ -2,7 +2,7 @@
 
 Da un'idea originale di Pietro "Legolas" Suffritti
 
-https://github.com/LegolasTheElf/mannaggia
+[https://github.com/LegolasTheElf/mannaggia](https://github.com/LegolasTheElf/mannaggia)
 
 **mannaggia** e **cowdamn** sono utility per system administrator. Possono essere solo da sistemisti esperti per mannaggiare automaticamente Santi e Beati. 
 
@@ -155,15 +155,15 @@ git log 1.0.1..HEAD | cat - CHANGELOG.md | sponge CHANGELOG.md
 
 ### Santi e beati
 I santi e beati da mannaggiare sono stati estratti da [cathopedia.org](https://it.cathopedia.org/)
-* https://it.cathopedia.org/wiki/Lista_dei_Santi
-* https://it.cathopedia.org/wiki/Lista_dei_Beati
+* [https://it.cathopedia.org/wiki/Lista_dei_Santi](https://it.cathopedia.org/wiki/Lista_dei_Santi)
+* [https://it.cathopedia.org/wiki/Lista_dei_Beati](https://it.cathopedia.org/wiki/Lista_dei_Beati)
 
 ### Costruzione del pacchetto RPM
 
-* https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/ 
-* https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it
-* https://www.thegeekstuff.com/2015/02/rpm-build-package-example/
+* [https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/](https://blog.prometheusproject.it/creare-pacchetti-rpm-su-centosrhel/)
+* [https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it](https://fedoraproject.org/wiki/How_to_create_an_RPM_package/it)
+* [https://www.thegeekstuff.com/2015/02/rpm-build-package-example/](https://www.thegeekstuff.com/2015/02/rpm-build-package-example/)
 
 ### Configurazione di un repository yum
 
-* https://stackoverflow.com/questions/13876875/how-to-make-rpm-auto-install-dependencies
+* [https://stackoverflow.com/questions/13876875/how-to-make-rpm-auto-install-dependencies](https://stackoverflow.com/questions/13876875/how-to-make-rpm-auto-install-dependencies)
