@@ -1,3 +1,77 @@
+# Versione 1.4.0
+
+commit 2bc9ca340c6d7465bd1bb9d4073ac36b623d45b1
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Thu Nov 7 21:25:51 2019 +0100
+
+    Verione 1.4
+
+commit b2996ed96f34a43e6c1e69ece337a358f426f44b
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Thu Nov 7 21:25:34 2019 +0100
+
+    Verione 1.4
+
+commit 6c29fa9538fe8b83a6139bc55446d557499679fb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:33:59 2019 +0100
+
+    Corregge la documentazione
+
+commit 5a55ebff53129c98aa7673a734798e112ce0235b
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:32:14 2019 +0100
+
+    Corregge la documentazione
+
+commit a38788849e7473d621fcdeae5934974c663e1f6e
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:28:14 2019 +0100
+
+    Corregge la documentazione
+
+commit d04daad175ac1285c64692818ed69484ca296378
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:18:20 2019 +0100
+
+    Corregge la documentazione
+
+commit b0eaf5cba626b6e2f2d5a67ff02654f70fe415bb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:16:46 2019 +0100
+
+    Corregge la documentazione
+
+commit ae386b08ff3bd061d8e8289973a639d33c7b2124
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:13:27 2019 +0100
+
+    Corregge la documentazione
+
+commit 47ad0cb412f983a190baa07929055c81b60d449d
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:11:04 2019 +0100
+
+    Corregge la documentazione
+
+commit ea16efe4c8dd13f7315db66d7a4718a0bbb752cb
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 23:09:20 2019 +0100
+
+    Corregge la documentazione
+
+commit f8fd7a2ea58b780dce131118c2c66b2e4ef94aad
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:57:57 2019 +0100
+
+    Corregge la documentazione
+
+commit b801d508aa77297061f0ac829fe0f313a66a3c25
+Merge: 377012b 72f5592
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Tue Nov 5 22:43:24 2019 +0100
+
+    Merge branch 'release/1.3.0' into develop
 # Versione 1.3.0
 
 commit 377012b71c5811639ed16ff928a4d1d641443f9f
