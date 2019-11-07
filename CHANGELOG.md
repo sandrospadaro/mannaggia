@@ -1,3 +1,5 @@
+# Versione 1.4.0
+
 commit 2bc9ca340c6d7465bd1bb9d4073ac36b623d45b1
 Author: Sandro Spadaro <sandro.spadaro@gmail.com>
 Date:   Thu Nov 7 21:25:51 2019 +0100
