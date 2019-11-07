@@ -1,4 +1,4 @@
 #!/bin/sh
 SANTO="$(shuf -n 1 /etc/mannaggia.d/mannaggia.dat)"
-ESCLAMAZIONE="${SANTO}! $1"
+ESCLAMAZIONE="${SANTO}! "$@
 echo Mannaggia ${ESCLAMAZIONE}
