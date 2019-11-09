@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import random
 import sys
+import ntpath
+import os
 
 def read_stdin():
     stdin_lines = []
@@ -22,9 +24,20 @@ def get_message():
 
     return ''
 
-if __name__ == "__main__":
+def mannaggia():
     lines = open('/etc/mannaggia.d/mannaggia.dat').read().splitlines()
     saint = random.choice(lines)
     message = get_message()
     curse = "Mannaggia {}! {}".format(saint, message)
-    print(curse)
+    return curse
+
+def get_script_name(path):
+    head, tail = ntpath.split(path)
+    return tail
+
+if __name__ == "__main__":
+    scritp_name = get_script_name(sys.argv[0])
+    if scritp_name == 'mannaggia':
+        print(mannaggia())
+    elif scritp_name == 'cowdamn':
+        os.system('cowsay -f /etc/mannaggia.d/mannaggia.cow {}'.format(mannaggia()))
