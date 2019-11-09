@@ -1,4 +1,43 @@
-#!/bin/sh
-SANTO="$(shuf -n 1 /etc/mannaggia.d/mannaggia.dat)"
-ESCLAMAZIONE="${SANTO}! "$@
-echo Mannaggia ${ESCLAMAZIONE}
+#!/usr/bin/python3
+import random
+import sys
+import ntpath
+import os
+
+def read_stdin():
+    stdin_lines = []
+    for stdin_line in sys.stdin:
+        stdin_lines.append(stdin_line)
+    return "".join(stdin_lines)
+
+def read_args():
+    argument = sys.argv[1:]
+    return ' '.join(argument)
+
+def get_message():
+    args = read_args()
+    if args:
+        return args
+    stdin = read_stdin()
+    if stdin:
+        return stdin
+
+    return ''
+
+def mannaggia():
+    lines = open('/etc/mannaggia.d/mannaggia.dat').read().splitlines()
+    saint = random.choice(lines)
+    message = get_message()
+    curse = "Mannaggia {}! {}".format(saint, message)
+    return curse
+
+def get_script_name(path):
+    head, tail = ntpath.split(path)
+    return tail
+
+if __name__ == "__main__":
+    scritp_name = get_script_name(sys.argv[0])
+    if scritp_name == 'mannaggia':
+        print(mannaggia())
+    elif scritp_name == 'cowdamn':
+        os.system('cowsay -f /etc/mannaggia.d/mannaggia.cow {}'.format(mannaggia()))
