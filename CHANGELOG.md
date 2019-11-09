@@ -1,3 +1,57 @@
+# Versione 1.5.0
+
+commit b6992f2e556a71ac229ddcd985c87a036cc1356d
+Merge: aed88bf b76e871
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 9 16:22:23 2019 +0100
+
+    Merge branch 'feature/porting-python' into develop
+
+commit b76e87120f5a3c2c7306fbf0dd1f047975ce913c
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 9 16:21:40 2019 +0100
+
+    rpm versione 1.5
+
+commit 22bcbfa6b7e0ba39a58e7f86055f23fdc4307269
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 9 16:20:19 2019 +0100
+
+    Modifica il file di spec
+
+commit 191a3857cbdd1cb0c61d1d9cac6bda08423be1b8
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 9 16:18:56 2019 +0100
+
+    Implementa mannaggia e cowdamn in un unico script python
+
+commit 5c3cabcbb2e45b28ae587da85e0ceb9c04767ed8
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Thu Nov 7 23:41:16 2019 +0100
+
+    Riscrive mannaggia in Python
+
+commit aed88bf0ca2f8798a17cac61d1e1c9e15d5915bf
+Merge: 4fd91e4 177bde0
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Thu Nov 7 21:31:03 2019 +0100
+
+    Merge branch 'develop' of github.com:sandrospadaro/mannaggia into develop
+
+commit 4fd91e4e5d1ee200b0ef869a9ffe8c1221b2df6a
+Merge: 2bc9ca3 76f1c2f
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Thu Nov 7 21:30:32 2019 +0100
+
+    Merge branch 'release/1.4.0' into develop
+
+commit 177bde084997f17d06bf9845769c3346687b26b4
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Thu Nov 7 12:09:03 2019 +0100
+
+    Create LICENSE
+    
+    Aggiunge la licenza d'uso
 # Versione 1.4.0
 
 commit 2bc9ca340c6d7465bd1bb9d4073ac36b623d45b1
