@@ -9,7 +9,7 @@ URL:            https://github.com/sandrospadaro/mannaggia
 Source0:        mannaggia-%{version}.tar.gz
 BuildArch:      noarch
 
-Requires: cowsay
+Requires: cowsay, python >= 3.7
 
 %description
 Utility per sistemisti. Può essere solo da sistemisti esperti
@@ -29,10 +29,12 @@ per mannaggiare Santi e Beati.
 install -d -m 0755 $RPM_BUILD_ROOT/etc/mannaggia.d
 install -d $RPM_BUILD_ROOT/usr/sbin
 install -m 0755 mannaggia-%{version}/mannaggia $RPM_BUILD_ROOT/usr/sbin/mannaggia
-install -m 0755 mannaggia-%{version}/cowdamn $RPM_BUILD_ROOT/usr/sbin/cowdamn
 install -m 0644 mannaggia-%{version}/mannaggia.dat $RPM_BUILD_ROOT/etc/mannaggia.d/mannaggia.dat
 install -m 0644 mannaggia-%{version}/mannaggia.cow $RPM_BUILD_ROOT/etc/mannaggia.d/mannaggia.cow
 #%make_install
+
+%post
+ln -f /usr/sbin/mannaggia /usr/sbin/cowdamn
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,7 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 /etc/mannaggia.d
 /usr/sbin/mannaggia
-/usr/sbin/cowdamn
 /etc/mannaggia.d/mannaggia.dat
 /etc/mannaggia.d/mannaggia.cow
 #%license add-license-file-here
