@@ -171,20 +171,6 @@ Per usare le utility su altre distribuzione basta
                 ||     ||>> 
 
 ```
-## Gestione del repository
-
-Per sviluppare questo progetto ho usato `git flow`. Ad ogni nuova release viene aggiornato il change log con l'istruzione:
-
-```
-git log <last-tag>..HEAD | cat - CHANGELOG.md | sponge CHANGELOG.md
-```
-
-es:
-
-```
-git log 1.0.1..HEAD | cat - CHANGELOG.md | sponge CHANGELOG.md
-```
-
 ## Credits
 
 ### Santi e beati
