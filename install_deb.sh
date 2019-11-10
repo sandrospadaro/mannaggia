@@ -1,6 +1,7 @@
 #!/bin/bash
 apt update && \
-	apt install cowsay && \
+	apt install cowsay -y && \
+	apt install python3 -y && \
 	mkdir -p /etc/mannaggia.d && \
 	cp src/mannaggia /usr/sbin/mannaggia && \
 	ln /usr/sbin/mannaggia /usr/sbin/cowdamn && \

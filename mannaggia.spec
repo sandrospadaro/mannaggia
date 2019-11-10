@@ -9,7 +9,7 @@ URL:            https://github.com/sandrospadaro/mannaggia
 Source0:        mannaggia-%{version}.tar.gz
 BuildArch:      noarch
 
-Requires: cowsay, python >= 3.7
+Requires: cowsay, python >= 3.6
 
 %description
 Utility per sistemisti. Può essere solo da sistemisti esperti
