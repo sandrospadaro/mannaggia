@@ -3,31 +3,12 @@ import random
 import sys
 import ntpath
 import os
+import argparse
+import subprocess
 
-def read_stdin():
-    stdin_lines = []
-    for stdin_line in sys.stdin:
-        stdin_lines.append(stdin_line)
-    return "".join(stdin_lines)
-
-def read_args():
-    argument = sys.argv[1:]
-    return ' '.join(argument)
-
-def get_message():
-    args = read_args()
-    if args:
-        return args
-    stdin = read_stdin()
-    if stdin:
-        return stdin
-
-    return ''
-
-def mannaggia():
+def mannaggia(message):
     lines = open('/etc/mannaggia.d/mannaggia.dat').read().splitlines()
     saint = random.choice(lines)
-    message = get_message()
     curse = "Mannaggia {}! {}".format(saint, message)
     return curse
 
@@ -35,9 +16,74 @@ def get_script_name(path):
     head, tail = ntpath.split(path)
     return tail
 
+
+def parse_arg(prog):
+    description = """ 
+        Utility per system administrator.
+        Può essere utilizzate solo da sistemisti esperti 
+        per mannaggiare automaticamente Santi e Beati."""
+
+    epilog = "by Sandro Spadaro <sandro.spadaro@gmail.com>"
+
+    parser = argparse.ArgumentParser(add_help=False, 
+        description=description, 
+        prog=prog,
+        epilog=epilog.format(prog))
+    parser.add_argument('message', 
+        metavar='msg', 
+        type=str, 
+        nargs='*',
+        help='messaggio da visulaizzare dopo aver mannaggiato')
+    parser.add_argument('-c', '--command', 
+        action='store', 
+        type=str,
+        help='Comando da eseguire e mannaggiare in caso di errore-')
+    parser.add_argument('-h', '--help', 
+        action='help', 
+        default=argparse.SUPPRESS, 
+        help='Visualizza questo messaggio ed esce.')
+    args = parser.parse_args()
+    return args
+    #print(args.print_help())
+
+def exec_command(command):
+    proc = subprocess.Popen(command,
+        shell=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE)
+
+    stdout_value, stderr_value = proc.communicate()
+
+    stdout = stdout_value.decode("utf-8") 
+    stderr = stderr_value.decode("utf-8")
+    returncode = proc.returncode
+    return stdout, stderr, returncode
+
 if __name__ == "__main__":
+    returncode = 0
     scritp_name = get_script_name(sys.argv[0])
+    args = parse_arg(scritp_name)
+
+    msg = ''
+
+    if args.command != None:
+        stdout, stderr, returncode = exec_command(args.command)
+        if stdout:
+            print(stdout)
+
+        if stderr:
+            msg = stderr
+        else:
+            exit(returncode)
+
+    elif args.message != None:
+        msg =  ' '.join(args.message)
+    else:
+        pass
+
     if scritp_name == 'mannaggia':
-        print(mannaggia())
+        print(mannaggia(msg))
     elif scritp_name == 'cowdamn':
-        os.system('cowsay -f /etc/mannaggia.d/mannaggia.cow {}'.format(mannaggia()))
+        os.system('cowsay -f /etc/mannaggia.d/mannaggia.cow {}'.format(mannaggia(msg)))
+
+    exit(returncode)

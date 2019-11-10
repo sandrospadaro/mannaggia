@@ -49,6 +49,7 @@ $
 ### cowdamn
 
 Si consiglia l'utilizzo di `cowdamn` per un'esperienza di mannaggia più autentica. 
+
 Es. 1:
 ```
 $ cowdamn 
@@ -79,6 +80,41 @@ $ cowdamn "La CPU sta a manetta"
                 ||----w ((
                 ||     ||>> 
 $
+```
+### Eseguire comandi con *mannaggia* e *cowdamn*
+
+*mannaggia* e *cowdamn* sono particolarmente utili per eseguire comandi e, in caso di errore, mannaggiare automaticamente prima di mostrare il messaggio d'errore del comando eseguito.
+
+es:
+```
+$ mannaggia -c 'cat file-inesistente'
+Mannaggia Beato Clemens August von Galen! cat: file-inesistente: No such file or directory
+$
+```
+```
+$ cowdamn -c 'cat file-inesistente'
+ ________________________________________
+/ Mannaggia San Rinaldo di Nocera Umbra! \
+| cat: file-inesistente: No such file or |
+\ directory                              /
+ ----------------------------------------
+      \                _
+       \              (_)   <-- life
+        \   ^__^       / \
+         \  (oo)\_____/_\ \
+            (__)\  you  ) /
+                ||----w ((
+                ||     ||>> 
+$
+```
+Se il comando non genera errori allo non viene mannaggiato nessun Santo o Beato.
+
+es:
+```
+$ mannaggia -c 'uname'
+Linux
+
+$ 
 ```
 ## Installazione su RedHat, CentOS e fedora
 
@@ -111,7 +147,11 @@ $ sudo install_deb.sh
 
 ## Installazione su altre distribuzioni
 
-Per usare le utility su altre distribuzione basta installare `cowasy` con il package manager previsto dal sistema e copiare gli script `mannaggia` e `cowdamn` in `/usr/sbin/` e i file `mannaggia.dat` e `mannaggia.cow` in `/etc/mannaggia.d/`
+Per usare le utility su altre distribuzione basta 
+1. installare `cowasy` e `python >= 3.6` con il package manager previsto dal sistema
+2. copiare lo script `mannaggia` in `/usr/sbin/`
+3. creare l'hard link `cowdamn` a mannaggia in `/usr/sbin/`
+4. copiare i file `mannaggia.dat` e `mannaggia.cow` in `/etc/mannaggia.d/`
 
 ## Supporto multilingua
 

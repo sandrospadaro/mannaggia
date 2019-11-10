@@ -1,3 +1,35 @@
+# Versione 1.6
+
+commit 851041dbc3fea9b06cb4e2c4c05cb92347cad3d2
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 10 13:07:16 2019 +0100
+
+    Versione 1-6
+
+commit 43c5cb784ce165800ec5eda31ffe9cebfc5cdf8b
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 10 13:05:36 2019 +0100
+
+    aggiorna il file spec
+
+commit 444347014d129aa6d620d550b8bb1d10f9c64a9e
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 10 12:55:27 2019 +0100
+
+    Aggriona lo script di installazione per debian
+
+commit 307117b0cf4202c9a9f5b76a2b35d8c55121d3f0
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sun Nov 10 12:34:05 2019 +0100
+
+    Aggiunge la possibilità di eseguire comandi
+
+commit f35867fab33911350d92b3c063d2300ec13934df
+Merge: b6992f2 4f0ffc3
+Author: Sandro Spadaro <sandro.spadaro@gmail.com>
+Date:   Sat Nov 9 16:29:50 2019 +0100
+
+    Merge branch 'release/1.5.0' into develop
 # Versione 1.5.0
 
 commit b6992f2e556a71ac229ddcd985c87a036cc1356d
