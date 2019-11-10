@@ -5,6 +5,7 @@ import ntpath
 import os
 import argparse
 import subprocess
+import shlex
 
 def mannaggia(message):
     lines = open('/etc/mannaggia.d/mannaggia.dat').read().splitlines()
@@ -84,6 +85,7 @@ if __name__ == "__main__":
     if scritp_name == 'mannaggia':
         print(mannaggia(msg))
     elif scritp_name == 'cowdamn':
-        os.system('cowsay -f /etc/mannaggia.d/mannaggia.cow {}'.format(mannaggia(msg)))
+        escaped_message = shlex.quote(mannaggia(msg))
+        os.system("cowsay -f /etc/mannaggia.d/mannaggia.cow {}".format(escaped_message))
 
     exit(returncode)
