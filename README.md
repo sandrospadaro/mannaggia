@@ -107,7 +107,7 @@ $ cowdamn -c 'cat file-inesistente'
                 ||     ||>> 
 $
 ```
-Se il comando non genera errori allo non viene mannaggiato nessun Santo o Beato.
+Se il comando non genera errori allora non viene mannaggiato nessun Santo o Beato.
 
 es:
 ```
