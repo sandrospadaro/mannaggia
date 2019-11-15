@@ -7,7 +7,7 @@ Da un'idea originale di Pietro "Legolas" Suffritti
 **mannaggia** e **cowdamn** sono utility per system administrator. Possono essere utilizzate solo da sistemisti esperti per mannaggiare automaticamente Santi e Beati. 
 
 ## Warranty
-Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritunuto reponsabile di eventuali punizioni e/o vendette divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
+Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potrà essere ritenuto reponsabile di eventuali punizioni e/o vendette divine come (elenco puramente esemplificativo, incompleto e non esaustivo):
 
 * perdita di dati in sistemi di produzione il cui backup è bloccato da eoni
 * richiesta di assistenza da utenti con cultura informatica paragonabile a quella di una scimmia urlante
@@ -17,7 +17,7 @@ Queste utility sono fornite *as is* e senza nessuna garanzia. L'autore non potr�
 
 Per costruire il pacchetto RPM:
 
-* settare la variabile d'ambiente MANNAGGIA_VERS
+* settare la variabile d'ambiente MANNAGGIA_VERS, per esempio:
 ```
 $ export MANNAGGIA_VERS=1.2
 ```
@@ -32,7 +32,7 @@ Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-<MANNAGGIA_V
 
 ### mannaggia
 
-Di seguito un esempio di utilizzo.
+Di seguito un esempio di utilizzo basilare.
 
 Es. 1:
 ```
@@ -83,7 +83,7 @@ $
 ```
 ### Eseguire comandi con *mannaggia* e *cowdamn*
 
-*mannaggia* e *cowdamn* sono particolarmente utili per eseguire comandi e, in caso di errore, mannaggiare automaticamente prima di mostrare il messaggio d'errore del comando eseguito.
+*mannaggia* e *cowdamn* sono particolarmente utili per eseguire comandi e, in caso di fallimento, mannaggiare automaticamente prima di mostrare il messaggio d'errore del comando eseguito.
 
 es:
 ```
