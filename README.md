@@ -26,7 +26,7 @@ $ export MANNAGGIA_VERS=1.2
 ```
 $ ./build.sh
 ```
-Questo comando produce il il file `~/rpmbuild/RPMS/noarch/mannaggia-<MANNAGGIA_VERS>-1.noarch.rpm`
+Questo comando produce il file `~/rpmbuild/RPMS/noarch/mannaggia-<MANNAGGIA_VERS>-1.noarch.rpm`
 
 ## Utilizzo
 
